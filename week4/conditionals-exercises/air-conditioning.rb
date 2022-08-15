@@ -4,7 +4,7 @@
 #     If the airconditioner is non-functional and the current temperature is above the the desired temperature... display "Fix the A/C now! It's hot!"
 #     If the airconditioner is non-functional and the current temperature is below the the desired temperature... display "Fix the A/C whenever you have the chance... It's cool..."
 def temp_control
-    puts "Welcome to the temperature control system.\n Is the A/C working? [y/n]"
+    print "Welcome to the temperature control system.\n Is the A/C working? [y/n]"
     functional =  gets.chomp
     functional.downcase
 
@@ -34,7 +34,7 @@ desired_temp = desired_temp_check
 end
 
 def current_temp_check
-    puts "What is the current temperature? (0-60.0)"
+    print "What is the current temperature? (0-60.0)"
     current_temp = gets.chomp
     current_temp = current_temp.to_f
     if current_temp > -50.0 && current_temp < 60.0
@@ -46,7 +46,7 @@ def current_temp_check
 end
 
 def desired_temp_check
-    puts "What temperature would you like it to be? (0-30.0)"
+    print "What temperature would you like it to be? (0-30.0)"
     desired_temp = gets.chomp
     desired_temp = desired_temp.to_f
     if desired_temp > -50.0 && desired_temp < 60.0
