@@ -7,8 +7,7 @@ puts "Drinking Age"
 #     If age is less than 18, print an appropriate message.
 #     If the age is equal to or over 18, print a different message.
 print "Please enter your age:" #print does not insert a new line
-age = gets.chomp 
-age = age.to_i
+age = gets.chomp.to_i 
 
 if age < 18
     puts "You are not able to drink."

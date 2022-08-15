@@ -5,12 +5,11 @@
 #     If the airconditioner is non-functional and the current temperature is below the the desired temperature... display "Fix the A/C whenever you have the chance... It's cool..."
 def temp_control
     print "Welcome to the temperature control system.\n Is the A/C working? [y/n]"
-    functional =  gets.chomp
-    functional.downcase
+    functional =  gets.chomp.downcase
 
-    if functional == 'y' || functional == 'yes'
+    if functional[0] == 'y' 
         working = true 
-    elsif functional == 'n' || functional == 'no' 
+    elsif functional[0] == 'n'  
         working = false
     else
         puts "Please enter a valid response."

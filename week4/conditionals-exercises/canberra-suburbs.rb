@@ -5,8 +5,7 @@
     # BONUS: use a case statement instead of an if-elsif chain to solve the suburbs exercise.
 
 puts "Suburbs check. \n  Which suburb do you live in?"
-suburb = gets.chomp
-suburb = suburb.downcase
+suburb = gets.chomp.downcase
 
 case suburb
     when "barton" then puts "Wow #{suburb}, you must be rich."
