@@ -17,21 +17,21 @@ def temp_control
         temp_control
     end
 
-current_temp = current_temp_check
-desired_temp = desired_temp_check
+current_temp = current_temp_check #checks what the current temp is and ensures it returns a valid number
+desired_temp = desired_temp_check #checks the desired temp and ensures it returns a valid number
     
-    
-    if working && current_temp > desired_temp
-        puts "Please turn the A/C on."
-    
-    elsif !working && current_temp > desired_temp
-        puts "Fix the A/C now."
-    
+    if working
+        current_temp > desired_temp
+            puts "Please turn the A/C on."
     else 
-        puts "Fix the A/C whenever you can, its cool."
+         if current_temp > desired_temp
+            puts "Fix the A/C now."
+        else 
+            puts "Fix the A/C whenever you can, its cool."
+        end
     end
 
-end
+end #end of temp_control
 
 def current_temp_check
     print "What is the current temperature? (0-60.0)"
