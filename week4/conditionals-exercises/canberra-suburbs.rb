@@ -7,11 +7,12 @@
 puts "Suburbs check. \n  Which suburb do you live in?"
 suburb = gets.chomp.downcase
 
-case suburb
-    when "barton" then puts "Wow #{suburb}, you must be rich."
-    when "kingston" then puts "Lots of good food there."     
-    when "braddon" then puts "Ah, #{suburb}. Good coffee scene."
-    else
-        puts "#{suburb}, huh? Sounds nice."
+message = case suburb
+when "barton"    then "Wow #{suburb}, you must be rich."
+when "kingston"  then "Lots of good food there."     
+when "braddon"   then "Ah, #{suburb}. Good coffee scene."
+else                  "#{suburb}, huh? Sounds nice."
     
 end
+
+puts message

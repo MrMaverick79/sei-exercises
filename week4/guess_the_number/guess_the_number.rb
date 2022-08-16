@@ -12,9 +12,7 @@
 
 #     Let the user choose the maximum value (so they can play a long game with a random value between 0 and 10000, for example).
 #     Give feedback to the user: "Wrong, guess higher!" or "Wrong, guess lower!"
-
-
-
+require "colorize"
 
 def playGame
     target_number = rand (10000)
@@ -23,33 +21,34 @@ def playGame
     number_of_guesses = 1
     guess = gets.to_i
     
-    until guess == target_number
+    until guess == target_number  
         19.downto(0) do |i|
         
             if guess > target_number
                 number_of_guesses += 1
-                print "Wrong guesss, lower! You have #{i} guesses left."
+                print "Wrong guesss, lower! You have #{i} guesses left.".yellow
                 guess = gets.to_i
             elsif guess < target_number
                 number_of_guesses += 1
-                print "Wrong guess, higher! You have #{i} guesses left."
+                print "Wrong guess, higher! You have #{i} guesses left.".red
                 guess = gets.to_i
             else
                 break
             end
         
             
-        end
+        end #end 19.downto
+
         if guess != target_number         
             puts "No more guesses!"
             break
         end
-        
 
-    end
+    end #end untilgem
+
     if guess == target_number
         number_of_guesses += 1
-        print "Correct, the number was #{target_number} \n You took #{number_of_guesses} guesses."
+        print "Correct, the number was #{target_number} \n You took #{number_of_guesses} guesses.".green
     end
 
 end #end playgame
