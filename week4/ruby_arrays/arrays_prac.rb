@@ -1,4 +1,4 @@
-require 'pry'
+require 'pry' #if you want to use debugger
 # 1. Create an array of the days of the week
 
 #     Create a variable named days_of_the_week as an array of the following:
