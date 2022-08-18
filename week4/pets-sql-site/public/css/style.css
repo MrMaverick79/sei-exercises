@@ -1,0 +1,22 @@
+body{
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 22px;
+}
+
+header{
+    display: flex
+}
+
+header li {
+    display: inline-flex;
+    justify-content: space-between;
+}
+
+.pet_image{
+    max-width: 50vw;
+}
+
+#new_pet input{
+    margin: 10px;
+    
+}
