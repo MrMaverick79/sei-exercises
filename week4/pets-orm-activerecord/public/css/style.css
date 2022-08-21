@@ -12,7 +12,9 @@ header li {
     justify-content: space-between;
 }
 
-
+.side_conatiner {
+    background-image: '/images/karsten-winegeart-oU6KZTXhuvk-unsplash.jpg';
+}
 
 .pet_image{
     max-width: 50vw;

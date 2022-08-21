@@ -115,4 +115,31 @@ get '/pets/:id/edit' do
 end #end get pets/:id/edit
 
 # 2. form submit, perform DB updtae, redirect
+post '/pets/:id' do
+    update_sql = "
+    UPDATE pets SET 
+        name = '#{params[:name]}',
+        species = '#{params[:species]}',
+        description = '#{params[:description]}',
+        roundness = #{params[:roundness]},
+        age = #{params[:age]},
+        alive = #{params[:alive]},
+        image_url = '#{params[:image_url]}'
+    WHERE id = #{params[:id]};   
+
+"
+
+    db_query update_sql
+
+    redirect "/pets/#{params[:id]}"
+end
+
+
+
 # Delete
+get '/pets/:id/delete' do
+    db_query "DELETE FROM pets  WHERE id= #{params[:id]}; "
+
+    redirect '/pets'
+
+end

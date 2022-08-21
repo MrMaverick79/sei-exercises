@@ -1,6 +1,8 @@
 <h3>Details for <%= @pet["name"] %> </h3>
 
-<p><a href="/pets/<%= @pet["id"] %>/edit">Edit</a></p>
+<a href="/pets/<%= @pet["id"] %>/edit">Edit</a>
+|
+<a href="/pets/<%= @pet["id"] %>/delete">Delete</a>
 
 <p>
     <strong>Species:</strong>
@@ -30,4 +32,4 @@
 </p>
 
 
-<img src="<%= @pet['image_url'] %>" alt="<%= @pet["name"] %>" class="pet_image">
+<img src="<%= @pet['image_url'] %>" alt="An image of <%= @pet["name"] %>" class="pet_image">
