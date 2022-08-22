@@ -1,0 +1,10 @@
+<h2>The result of your lookup for "<%= @query %>" is:</h2>
+
+    <%= @result["results"].each do |movie| %>
+        <h3><%=movie["original_title"] %><h3> 
+        <img src="https://image.tmdb.org/t/p/w200/<%= movie["poster_path"] %>" alt="">
+
+        <p>Description: <em><%= movie["overview"] %></em></p>
+
+    <% end  %>
+

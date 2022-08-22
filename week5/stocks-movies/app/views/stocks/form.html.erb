@@ -1,0 +1,14 @@
+<h2>Which stock would you like to see?</h2>
+
+<%= image_tag 'stocks.jpg', alt: "stonks" , width: "300" %>
+
+<form action="/stocks/lookup">
+    <label for="">
+        Stock code:
+        <input type="text" name="stock_code" id="stock_code">
+
+        <button>Lookup</button>
+    </label>
+
+
+</form>

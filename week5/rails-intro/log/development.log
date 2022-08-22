@@ -1,0 +1,2024 @@
+Started GET "/" for 127.0.0.1 at 2022-08-22 13:50:56 +1000
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/newtrick/.rvm/gems/ruby-2.7.6/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/newtrick/.rvm/gems/ruby-2.7.6/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 1.1ms | Allocations: 674)
+Completed 200 OK in 7ms (Views: 4.3ms | ActiveRecord: 0.0ms | Allocations: 3870)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-22 13:53:38 +1000
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/newtrick/.rvm/gems/ruby-2.7.6/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/newtrick/.rvm/gems/ruby-2.7.6/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 568)
+Completed 200 OK in 4ms (Views: 2.1ms | ActiveRecord: 0.0ms | Allocations: 2993)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-22 13:53:44 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/newtrick/.rvm/gems/ruby-2.7.6/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/newtrick/.rvm/gems/ruby-2.7.6/gems/railties-7.0.3.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 0.8ms | Allocations: 368)
+Completed 200 OK in 2ms (Views: 1.8ms | ActiveRecord: 0.0ms | Allocations: 1115)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-22 14:05:47 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/newtrick/.rvm/gems/ruby-2.7.6/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/newtrick/.rvm/gems/ruby-2.7.6/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb (2.3ms)
+Completed 200 OK in 7ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-22 14:07:51 +1000
+Processing by Rails::WelcomeController#index as HTML
+  Rendering /home/newtrick/.rvm/gems/ruby-2.7.6/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered /home/newtrick/.rvm/gems/ruby-2.7.6/gems/railties-5.2.8.1/lib/rails/templates/rails/welcome/index.html.erb (3.5ms)
+Completed 200 OK in 7ms (Views: 6.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello" for 127.0.0.1 at 2022-08-22 14:07:59 +1000
+  
+ActionController::RoutingError (uninitialized constant PagesController):
+  
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.8.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.8.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.8.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.8.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/hello" for 127.0.0.1 at 2022-08-22 14:09:23 +1000
+  
+ActionController::RoutingError (uninitialized constant PagesController):
+  
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.8.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.8.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.8.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.8.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/hello" for 127.0.0.1 at 2022-08-22 14:11:17 +1000
+Processing by PagesController#say_hi as HTML
+  Rendering pages/say_hi.html.erb within layouts/application
+  Rendered pages/say_hi.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 183ms (Views: 181.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello" for 127.0.0.1 at 2022-08-22 14:11:43 +1000
+Processing by PagesController#say_hi as */*
+  Rendering pages/say_hi.html.erb within layouts/application
+  Rendered pages/say_hi.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello" for 127.0.0.1 at 2022-08-22 14:11:45 +1000
+Processing by PagesController#say_hi as HTML
+  Rendering pages/say_hi.html.erb within layouts/application
+  Rendered pages/say_hi.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 13.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello" for 127.0.0.1 at 2022-08-22 14:12:02 +1000
+Processing by PagesController#say_hi as HTML
+  Rendering pages/say_hi.html.erb within layouts/application
+  Rendered pages/say_hi.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello" for 127.0.0.1 at 2022-08-22 14:12:03 +1000
+Processing by PagesController#say_hi as HTML
+  Rendering pages/say_hi.html.erb within layouts/application
+  Rendered pages/say_hi.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello" for 127.0.0.1 at 2022-08-22 14:12:10 +1000
+Processing by PagesController#say_hi as HTML
+  Rendering pages/say_hi.html.erb within layouts/application
+  Rendered pages/say_hi.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 14ms (Views: 13.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello" for 127.0.0.1 at 2022-08-22 14:12:33 +1000
+Processing by PagesController#say_hi as HTML
+Completed 500 Internal Server Error in 68ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `plain' for #<PagesController:0x00007f5e30805440>):
+  
+app/controllers/pages_controller.rb:5:in `say_hi'
+Started GET "/hello" for 127.0.0.1 at 2022-08-22 14:12:41 +1000
+Processing by PagesController#say_hi as HTML
+  Rendering text template
+  Rendered text template (0.0ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello" for 127.0.0.1 at 2022-08-22 14:14:47 +1000
+Processing by PagesController#say_hi as HTML
+  Rendering pages/say_hi.html.erb within layouts/application
+  Rendered pages/say_hi.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello" for 127.0.0.1 at 2022-08-22 14:15:04 +1000
+Processing by PagesController#say_hi as HTML
+  Rendering pages/say_hi.html.erb within layouts/application
+  Rendered pages/say_hi.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:15:12 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/funny"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:17:25 +1000
+  
+AbstractController::ActionNotFound (The action 'haha' could not be found for PagesController):
+  
+actionpack (5.2.8.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.8.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.8.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.8.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.8.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.8.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:19:08 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (0.2ms)
+Completed 200 OK in 12ms (Views: 11.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:22:36 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (5000.8ms)
+Completed 200 OK in 5008ms (Views: 5007.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:22:43 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (5000.8ms)
+Completed 200 OK in 5008ms (Views: 5007.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:23:03 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (5001.2ms)
+Completed 200 OK in 5018ms (Views: 5016.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:23:21 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 14.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:23:38 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:24:32 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (5000.7ms)
+Completed 200 OK in 5008ms (Views: 5007.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:27:14 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:27:16 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (5000.9ms)
+Completed 200 OK in 5017ms (Views: 5016.0ms | ActiveRecord: 0.0ms)
+
+
+  Rendered pages/haha.html.erb within layouts/application (5001.2ms)
+Completed 200 OK in 5024ms (Views: 5023.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:27:22 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (5000.8ms)
+Completed 200 OK in 5008ms (Views: 5007.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:27:51 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (5000.9ms)
+Completed 200 OK in 5008ms (Views: 5007.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:28:37 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:33:31 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 33ms (Views: 32.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assests/images/crazyfrog.jpg" for 127.0.0.1 at 2022-08-22 14:33:31 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/assests/images/crazyfrog.jpg"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:33:47 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assests/images/poker.dog.jpg" for 127.0.0.1 at 2022-08-22 14:33:47 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/assests/images/poker.dog.jpg"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:33:56 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 15.0ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/poker.dog.jpg"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.8.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.8.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.8.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.8.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:33:57 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 15.9ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/poker.dog.jpg"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.8.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.8.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.8.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.8.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:34:06 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app/assets/images/poker.dog.jpg" for 127.0.0.1 at 2022-08-22 14:34:06 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/poker.dog.jpg"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:34:16 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 14.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app/assets/images/poker.dog.jpg" for 127.0.0.1 at 2022-08-22 14:34:16 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/poker.dog.jpg"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:34:39 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app/assets/images/crazyfrog.jpg" for 127.0.0.1 at 2022-08-22 14:34:39 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/crazyfrog.jpg"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:34:42 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app/assets/images/crazyfrog.jpg" for 127.0.0.1 at 2022-08-22 14:34:42 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/crazyfrog.jpg"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:35:02 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app/assets/images/crazyfrog.jpg" for 127.0.0.1 at 2022-08-22 14:35:02 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/crazyfrog.jpg"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:35:16 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/app/assets/images/poker.dog.jpg" for 127.0.0.1 at 2022-08-22 14:35:16 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/app/assets/images/poker.dog.jpg"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:35:43 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.2ms | ActiveRecord: 0.0ms)
+
+
+  
+ActionController::RoutingError (No route matches [GET] "/assets/images/poker.dog.jpg"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:11:in `block in call'
+activesupport (5.2.8.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.8.1) lib/active_support/logger.rb:65:in `block (3 levels) in broadcast'
+activesupport (5.2.8.1) lib/active_support/logger_silence.rb:21:in `silence'
+activesupport (5.2.8.1) lib/active_support/logger.rb:63:in `block (2 levels) in broadcast'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:11:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:36:59 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:37:13 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 17.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:37:29 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:41:11 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (3.3ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "poker_dogs.jpg" is not present in the asset pipeline.
+):
+    17: 
+    18: <!--An easier way of linking images:-->
+    19: 
+    20: <%= image_tag 'poker_dogs.jpg' %>
+  
+app/views/pages/haha.html.erb:20:in `_app_views_pages_haha_html_erb__1594733418129632166_30980'
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:41:42 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (The asset "poker.dogs.jpg" is not present in the asset pipeline.
+):
+    17: 
+    18: <!--An easier way of linking images:-->
+    19: 
+    20: <%= image_tag 'poker.dogs.jpg', alt: "dogs playing poker" %>
+  
+app/views/pages/haha.html.erb:20:in `_app_views_pages_haha_html_erb__1594733418129632166_31500'
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:41:59 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (31.2ms)
+Completed 200 OK in 59ms (Views: 58.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:42:09 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:42:25 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:44:19 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 18ms (Views: 16.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:44:21 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 17.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:44:23 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 19ms (Views: 18.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:45:40 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 18ms (Views: 17.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/funny" for 127.0.0.1 at 2022-08-22 14:46:10 +1000
+Processing by PagesController#haha as HTML
+  Rendering pages/haha.html.erb within layouts/application
+  Rendered pages/haha.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 19ms (Views: 18.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello" for 127.0.0.1 at 2022-08-22 14:48:12 +1000
+Processing by PagesController#say_hi as HTML
+  Rendering pages/say_hi.html.erb within layouts/application
+  Rendered pages/say_hi.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/person" for 127.0.0.1 at 2022-08-22 14:51:35 +1000
+  
+AbstractController::ActionNotFound (The action 'greet' could not be found for PagesController):
+  
+actionpack (5.2.8.1) lib/abstract_controller/base.rb:129:in `process'
+actionview (5.2.8.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.8.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.8.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.8.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.8.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/hello/person" for 127.0.0.1 at 2022-08-22 14:52:32 +1000
+Processing by PagesController#greet as HTML
+  Parameters: {"person"=>"person"}
+Completed 406 Not Acceptable in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (PagesController#greet is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.8.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.8.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.8.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.8.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.8.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.8.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.8.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.8.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.8.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.8.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.8.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.8.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.8.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.8.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.8.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.8.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.8.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.8.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.8.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.8.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.8.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.8.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.8.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/hello/person" for 127.0.0.1 at 2022-08-22 14:53:35 +1000
+Processing by PagesController#greet as HTML
+  Parameters: {"person"=>"person"}
+  Rendering pages/greet.html.erb within layouts/application
+  Rendered pages/greet.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/brendan" for 127.0.0.1 at 2022-08-22 14:53:43 +1000
+Processing by PagesController#greet as HTML
+  Parameters: {"person"=>"brendan"}
+  Rendering pages/greet.html.erb within layouts/application
+  Rendered pages/greet.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/brendan" for 127.0.0.1 at 2022-08-22 14:55:18 +1000
+Processing by PagesController#greet as HTML
+  Parameters: {"person"=>"brendan"}
+  Rendering pages/greet.html.erb within layouts/application
+  Rendered pages/greet.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/brendan" for 127.0.0.1 at 2022-08-22 14:55:55 +1000
+Processing by PagesController#greet as HTML
+  Parameters: {"person"=>"brendan"}
+  Rendering pages/greet.html.erb within layouts/application
+  Rendered pages/greet.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/brendan" for 127.0.0.1 at 2022-08-22 14:55:57 +1000
+Processing by PagesController#greet as HTML
+  Parameters: {"person"=>"brendan"}
+  Rendering pages/greet.html.erb within layouts/application
+  Rendered pages/greet.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 15.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/brendan" for 127.0.0.1 at 2022-08-22 14:55:58 +1000
+Processing by PagesController#greet as HTML
+  Parameters: {"person"=>"brendan"}
+  Rendering pages/greet.html.erb within layouts/application
+  Rendered pages/greet.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 21ms (Views: 20.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/brendan" for 127.0.0.1 at 2022-08-22 14:55:58 +1000
+Processing by PagesController#greet as HTML
+  Parameters: {"person"=>"brendan"}
+  Rendering pages/greet.html.erb within layouts/application
+  Rendered pages/greet.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 18ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/brendan" for 127.0.0.1 at 2022-08-22 14:55:59 +1000
+Processing by PagesController#greet as HTML
+  Parameters: {"person"=>"brendan"}
+  Rendering pages/greet.html.erb within layouts/application
+  Rendered pages/greet.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 20ms (Views: 19.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/brendan" for 127.0.0.1 at 2022-08-22 14:56:01 +1000
+Processing by PagesController#greet as HTML
+  Parameters: {"person"=>"brendan"}
+  Rendering pages/greet.html.erb within layouts/application
+  Rendered pages/greet.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/brendan" for 127.0.0.1 at 2022-08-22 14:56:02 +1000
+Processing by PagesController#greet as HTML
+  Parameters: {"person"=>"brendan"}
+  Rendering pages/greet.html.erb within layouts/application
+  Rendered pages/greet.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 14.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/brendan" for 127.0.0.1 at 2022-08-22 14:59:04 +1000
+Processing by PagesController#greet as HTML
+  Parameters: {"person"=>"brendan"}
+  Rendering pages/greet.html.erb within layouts/application
+  Rendered pages/greet.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/brendan" for 127.0.0.1 at 2022-08-22 14:59:05 +1000
+Processing by PagesController#greet as HTML
+  Parameters: {"person"=>"brendan"}
+  Rendering pages/greet.html.erb within layouts/application
+  Rendered pages/greet.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/sally" for 127.0.0.1 at 2022-08-22 14:59:10 +1000
+Processing by PagesController#greet as HTML
+  Parameters: {"person"=>"sally"}
+  Rendering pages/greet.html.erb within layouts/application
+  Rendered pages/greet.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 16.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/thedognextdoor" for 127.0.0.1 at 2022-08-22 14:59:18 +1000
+Processing by PagesController#greet as HTML
+  Parameters: {"person"=>"thedognextdoor"}
+  Rendering pages/greet.html.erb within layouts/application
+  Rendered pages/greet.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 15.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/thedognextdoor" for 127.0.0.1 at 2022-08-22 14:59:50 +1000
+Processing by PagesController#greet as HTML
+  Parameters: {"person"=>"thedognextdoor"}
+  Rendering pages/greet.html.erb within layouts/application
+  Rendered pages/greet.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 9ms (Views: 8.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/thedognextdoor" for 127.0.0.1 at 2022-08-22 14:59:56 +1000
+Processing by PagesController#greet as HTML
+  Parameters: {"person"=>"thedognextdoor"}
+  Rendering pages/greet.html.erb within layouts/application
+  Rendered pages/greet.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 15.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/hello/roger" for 127.0.0.1 at 2022-08-22 15:00:00 +1000
+Processing by PagesController#greet as HTML
+  Parameters: {"person"=>"roger"}
+  Rendering pages/greet.html.erb within layouts/application
+  Rendered pages/greet.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 7.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/1/*/2" for 127.0.0.1 at 2022-08-22 15:01:37 +1000
+  
+ActionController::RoutingError (uninitialized constant CalculatorController):
+  
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.8.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.8.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.8.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.8.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/calc/1/*/2" for 127.0.0.1 at 2022-08-22 15:03:11 +1000
+  
+LoadError (Unable to autoload constant CalculatorController, expected /home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb to define it):
+  
+activesupport (5.2.8.1) lib/active_support/dependencies.rb:511:in `load_missing_constant'
+activesupport (5.2.8.1) lib/active_support/dependencies.rb:195:in `const_missing'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+activesupport (5.2.8.1) lib/active_support/dependencies.rb:582:in `get'
+activesupport (5.2.8.1) lib/active_support/dependencies.rb:613:in `constantize'
+actionpack (5.2.8.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.8.1) lib/action_dispatch/http/parameters.rb:101:in `binary_params_for?'
+actionpack (5.2.8.1) lib/action_dispatch/http/parameters.rb:92:in `set_binary_encoding'
+actionpack (5.2.8.1) lib/action_dispatch/http/parameters.rb:69:in `path_parameters='
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:50:in `block in serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.8.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.8.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/calc/1/*/2" for 127.0.0.1 at 2022-08-22 15:03:45 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"1", "op"=>"*", "second"=>"2"}
+Completed 406 Not Acceptable in 5ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (CalculatorController#calculon is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.8.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.8.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.8.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.8.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.8.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.8.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.8.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.8.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.8.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.8.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.8.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.8.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.8.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.8.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.8.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.8.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.8.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.8.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.8.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.8.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.8.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.8.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.8.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/calc/1/*/2" for 127.0.0.1 at 2022-08-22 15:04:54 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"1", "op"=>"*", "second"=>"2"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 10ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/1/*/2" for 127.0.0.1 at 2022-08-22 15:08:24 +1000
+  
+SyntaxError (/home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb:16: syntax error, unexpected `end'
+        end
+        ^~~
+):
+  
+app/controllers/calculator_controller.rb:16: syntax error, unexpected `end'
+Started GET "/calc/1/*/2" for 127.0.0.1 at 2022-08-22 15:08:46 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"1", "op"=>"*", "second"=>"2"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/1/*/2" for 127.0.0.1 at 2022-08-22 15:09:08 +1000
+  
+SyntaxError (/home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb:12: syntax error, unexpected instance variable, expecting `end'
+...           @result = @first @op @second
+...                            ^~~
+):
+  
+app/controllers/calculator_controller.rb:12: syntax error, unexpected instance variable, expecting `end'
+Started GET "/calc/1/*/2" for 127.0.0.1 at 2022-08-22 15:09:30 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"1", "op"=>"*", "second"=>"2"}
+Completed 500 Internal Server Error in 1ms (ActiveRecord: 0.0ms)
+
+
+  
+TypeError (no implicit conversion of String into Integer):
+  
+app/controllers/calculator_controller.rb:12:in `*'
+app/controllers/calculator_controller.rb:12:in `calculon'
+Started GET "/calc/1/*/2" for 127.0.0.1 at 2022-08-22 15:09:58 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"1", "op"=>"*", "second"=>"2"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 7.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/1/*/2" for 127.0.0.1 at 2022-08-22 15:10:16 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"1", "op"=>"*", "second"=>"2"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 9ms (Views: 8.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/1/*/2" for 127.0.0.1 at 2022-08-22 15:12:11 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"1", "op"=>"*", "second"=>"2"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/1/*/2" for 127.0.0.1 at 2022-08-22 15:12:19 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"1", "op"=>"*", "second"=>"2"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 15.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/1/*/8" for 127.0.0.1 at 2022-08-22 15:12:23 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"1", "op"=>"*", "second"=>"8"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 18.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/2/*/8" for 127.0.0.1 at 2022-08-22 15:12:28 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"2", "op"=>"*", "second"=>"8"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 17.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/2/-/8" for 127.0.0.1 at 2022-08-22 15:12:34 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"2", "op"=>"-", "second"=>"8"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 15.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/2/+/8" for 127.0.0.1 at 2022-08-22 15:12:40 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"2", "op"=>"+", "second"=>"8"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 15.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/2/d/8" for 127.0.0.1 at 2022-08-22 15:12:47 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"2", "op"=>"d", "second"=>"8"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 15.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/2/d/8" for 127.0.0.1 at 2022-08-22 15:13:07 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"2", "op"=>"d", "second"=>"8"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/2///8" for 127.0.0.1 at 2022-08-22 15:13:17 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/calc/2/8"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/calc/5*/300" for 127.0.0.1 at 2022-08-22 15:20:36 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/calc/5*/300"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/calc/5/*/3000" for 127.0.0.1 at 2022-08-22 15:20:47 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"5", "op"=>"*", "second"=>"3000"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 18ms (Views: 16.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/5/*/300000000000000000000000" for 127.0.0.1 at 2022-08-22 15:20:56 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"5", "op"=>"*", "second"=>"300000000000000000000000"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 14.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/5/*/300000000000000000000000" for 127.0.0.1 at 2022-08-22 15:28:58 +1000
+  
+SyntaxError (/home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb:9: syntax error, unexpected instance variable, expecting `then' or ',' or ';' or '\n'
+            when '+'  @first + @second
+                      ^~~~~~
+/home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb:10: syntax error, unexpected `when', expecting `end'
+            when '-'  @first - @second
+            ^~~~
+/home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb:10: syntax error, unexpected instance variable, expecting `end'
+            when '-'  @first - @second
+                      ^~~~~~
+/home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb:11: syntax error, unexpected `when', expecting `end'
+            when '*'  @first * @second
+            ^~~~
+/home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb:11: syntax error, unexpected instance variable, expecting `end'
+            when '*'  @first * @second
+                      ^~~~~~
+/home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb:12: syntax error, unexpected `when', expecting `end'
+            when 'd'  @first.to_f / @second
+            ^~~~
+/home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb:12: syntax error, unexpected instance variable, expecting `end'
+            when 'd'  @first.to_f / @second
+                      ^~~~~~
+/home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb:23: syntax error, unexpected `end', expecting end-of-input
+end #end CalculatorController
+^~~
+):
+  
+app/controllers/calculator_controller.rb:9: syntax error, unexpected instance variable, expecting `then' or ',' or ';' or '\n'
+app/controllers/calculator_controller.rb:10: syntax error, unexpected `when', expecting `end'
+app/controllers/calculator_controller.rb:10: syntax error, unexpected instance variable, expecting `end'
+app/controllers/calculator_controller.rb:11: syntax error, unexpected `when', expecting `end'
+app/controllers/calculator_controller.rb:11: syntax error, unexpected instance variable, expecting `end'
+app/controllers/calculator_controller.rb:12: syntax error, unexpected `when', expecting `end'
+app/controllers/calculator_controller.rb:12: syntax error, unexpected instance variable, expecting `end'
+app/controllers/calculator_controller.rb:23: syntax error, unexpected `end', expecting end-of-input
+Started GET "/calc/5/*/300000000000000000000000" for 127.0.0.1 at 2022-08-22 15:29:34 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"5", "op"=>"*", "second"=>"300000000000000000000000"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 7ms (Views: 6.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/5/f/300000000000000000000000" for 127.0.0.1 at 2022-08-22 15:29:42 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"5", "op"=>"f", "second"=>"300000000000000000000000"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 17ms (Views: 15.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/5/f/300000000000000000000000" for 127.0.0.1 at 2022-08-22 15:31:10 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"5", "op"=>"f", "second"=>"300000000000000000000000"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/5/*/300000000000000000000000" for 127.0.0.1 at 2022-08-22 15:31:30 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"5", "op"=>"*", "second"=>"300000000000000000000000"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 17ms (Views: 16.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/5/+/300000000000000000000000" for 127.0.0.1 at 2022-08-22 15:34:13 +1000
+  
+SyntaxError (/home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb:9: syntax error, unexpected instance variable
+...     when '+'  then  @first.@op @second
+...                            ^~~
+/home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb:10: syntax error, unexpected `then', expecting `end'
+            when '-'  then  @first - @second
+                      ^~~~
+/home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb:11: syntax error, unexpected `when', expecting `end'
+            when '*'  then  @first * @second
+            ^~~~
+/home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb:11: syntax error, unexpected `then', expecting `end'
+            when '*'  then  @first * @second
+                      ^~~~
+/home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb:12: syntax error, unexpected `when', expecting `end'
+            when 'd'  then  @first.to_f / @se...
+            ^~~~
+/home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb:12: syntax error, unexpected `then', expecting `end'
+            when 'd'  then  @first.to_f / @second
+                      ^~~~
+/home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb:13: else without rescue is useless
+            else "ERROR"
+            ^~~~
+/home/newtrick/sei/sei-exercises/week5/rails-intro/app/controllers/calculator_controller.rb:23: syntax error, unexpected `end', expecting end-of-input
+end #end CalculatorController
+^~~
+):
+  
+app/controllers/calculator_controller.rb:9: syntax error, unexpected instance variable
+app/controllers/calculator_controller.rb:10: syntax error, unexpected `then', expecting `end'
+app/controllers/calculator_controller.rb:11: syntax error, unexpected `when', expecting `end'
+app/controllers/calculator_controller.rb:11: syntax error, unexpected `then', expecting `end'
+app/controllers/calculator_controller.rb:12: syntax error, unexpected `when', expecting `end'
+app/controllers/calculator_controller.rb:12: syntax error, unexpected `then', expecting `end'
+app/controllers/calculator_controller.rb:13: else without rescue is useless
+app/controllers/calculator_controller.rb:23: syntax error, unexpected `end', expecting end-of-input
+Started GET "/calc/5/+/300000000000000000000000" for 127.0.0.1 at 2022-08-22 15:34:48 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"5", "op"=>"+", "second"=>"300000000000000000000000"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 19ms (Views: 18.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/5/+/300000000000000000000000" for 127.0.0.1 at 2022-08-22 15:36:12 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"5", "op"=>"+", "second"=>"300000000000000000000000"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 7.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/5/+/3000000000" for 127.0.0.1 at 2022-08-22 15:36:19 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"5", "op"=>"+", "second"=>"3000000000"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 13ms (Views: 12.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/5/div/3000000000" for 127.0.0.1 at 2022-08-22 15:37:01 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"5", "op"=>"div", "second"=>"3000000000"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 18ms (Views: 16.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/5/div/3000000000" for 127.0.0.1 at 2022-08-22 15:37:17 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"5", "op"=>"div", "second"=>"3000000000"}
+Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
+
+
+  
+NoMethodError (undefined method `to_f=' for nil:NilClass
+Did you mean?  to_d):
+  
+app/controllers/calculator_controller.rb:8:in `calculon'
+Started GET "/calc/5/div/3000000000" for 127.0.0.1 at 2022-08-22 15:37:36 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"5", "op"=>"div", "second"=>"3000000000"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 18ms (Views: 16.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/5/*/3000000000" for 127.0.0.1 at 2022-08-22 15:37:47 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"5", "op"=>"*", "second"=>"3000000000"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 15ms (Views: 14.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc" for 127.0.0.1 at 2022-08-22 15:43:02 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/calc"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/calc" for 127.0.0.1 at 2022-08-22 15:45:47 +1000
+Processing by CalculatorController#home as HTML
+Completed 406 Not Acceptable in 18ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionController::UnknownFormat (CalculatorController#home is missing a template for this request format and variant.
+
+request.formats: ["text/html"]
+request.variant: []
+
+NOTE! For XHR/Ajax or API requests, this action would normally respond with 204 No Content: an empty white screen. Since you're loading it in a web browser, we assume that you expected to actually render a template, not nothing, so we're showing an error to be extra-clear. If you expect 204 No Content, carry on. That's what you'll get from an XHR or API request. Give it a shot.):
+  
+actionpack (5.2.8.1) lib/action_controller/metal/implicit_render.rb:55:in `default_render'
+actionpack (5.2.8.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `block in send_action'
+actionpack (5.2.8.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `tap'
+actionpack (5.2.8.1) lib/action_controller/metal/basic_implicit_render.rb:6:in `send_action'
+actionpack (5.2.8.1) lib/abstract_controller/base.rb:194:in `process_action'
+actionpack (5.2.8.1) lib/action_controller/metal/rendering.rb:30:in `process_action'
+actionpack (5.2.8.1) lib/abstract_controller/callbacks.rb:42:in `block in process_action'
+activesupport (5.2.8.1) lib/active_support/callbacks.rb:132:in `run_callbacks'
+actionpack (5.2.8.1) lib/abstract_controller/callbacks.rb:41:in `process_action'
+actionpack (5.2.8.1) lib/action_controller/metal/rescue.rb:22:in `process_action'
+actionpack (5.2.8.1) lib/action_controller/metal/instrumentation.rb:34:in `block in process_action'
+activesupport (5.2.8.1) lib/active_support/notifications.rb:168:in `block in instrument'
+activesupport (5.2.8.1) lib/active_support/notifications/instrumenter.rb:23:in `instrument'
+activesupport (5.2.8.1) lib/active_support/notifications.rb:168:in `instrument'
+actionpack (5.2.8.1) lib/action_controller/metal/instrumentation.rb:32:in `process_action'
+actionpack (5.2.8.1) lib/action_controller/metal/params_wrapper.rb:256:in `process_action'
+activerecord (5.2.8.1) lib/active_record/railties/controller_runtime.rb:24:in `process_action'
+actionpack (5.2.8.1) lib/abstract_controller/base.rb:134:in `process'
+actionview (5.2.8.1) lib/action_view/rendering.rb:32:in `process'
+actionpack (5.2.8.1) lib/action_controller/metal.rb:191:in `dispatch'
+actionpack (5.2.8.1) lib/action_controller/metal.rb:252:in `dispatch'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:52:in `dispatch'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:34:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.8.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.8.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/calc" for 127.0.0.1 at 2022-08-22 15:46:23 +1000
+Processing by CalculatorController#home as HTML
+  Rendering calculator/home.html.erb within layouts/application
+  Rendered calculator/home.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 18ms (Views: 17.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc" for 127.0.0.1 at 2022-08-22 15:48:59 +1000
+Processing by CalculatorController#home as HTML
+  Rendering calculator/home.html.erb within layouts/application
+  Rendered calculator/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 15ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc" for 127.0.0.1 at 2022-08-22 15:49:28 +1000
+Processing by CalculatorController#home as HTML
+  Rendering calculator/home.html.erb within layouts/application
+  Rendered calculator/home.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 8ms (Views: 7.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/answer?first=43&op=%2B&second=44" for 127.0.0.1 at 2022-08-22 15:49:35 +1000
+  
+ActionController::RoutingError (No route matches [GET] "/calc/answer"):
+  
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/calc/answer?first=43&op=%2B&second=44" for 127.0.0.1 at 2022-08-22 15:52:02 +1000
+  
+ActionController::RoutingError (uninitialized constant CalcultorController):
+  
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:283:in `const_get'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:283:in `block in constantize'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `each'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `inject'
+activesupport (5.2.8.1) lib/active_support/inflector/methods.rb:281:in `constantize'
+actionpack (5.2.8.1) lib/action_dispatch/http/request.rb:88:in `controller_class_for'
+actionpack (5.2.8.1) lib/action_dispatch/http/request.rb:81:in `controller_class'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:46:in `controller'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:32:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:52:in `block in serve'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `each'
+actionpack (5.2.8.1) lib/action_dispatch/journey/router.rb:35:in `serve'
+actionpack (5.2.8.1) lib/action_dispatch/routing/route_set.rb:840:in `call'
+rack (2.2.4) lib/rack/tempfile_reaper.rb:15:in `call'
+rack (2.2.4) lib/rack/etag.rb:27:in `call'
+rack (2.2.4) lib/rack/conditional_get.rb:27:in `call'
+rack (2.2.4) lib/rack/head.rb:12:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/http/content_security_policy.rb:18:in `call'
+rack (2.2.4) lib/rack/session/abstract/id.rb:266:in `context'
+rack (2.2.4) lib/rack/session/abstract/id.rb:260:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/cookies.rb:670:in `call'
+activerecord (5.2.8.1) lib/active_record/migration.rb:559:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.8.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+web-console (3.7.0) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.7.0) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.7.0) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.8.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.8.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.8.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.4.2) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.2.4) lib/rack/method_override.rb:24:in `call'
+rack (2.2.4) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.8.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.8.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.2.4) lib/rack/sendfile.rb:110:in `call'
+railties (5.2.8.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.6) lib/puma/configuration.rb:227:in `call'
+puma (3.12.6) lib/puma/server.rb:706:in `handle_request'
+puma (3.12.6) lib/puma/server.rb:476:in `process_client'
+puma (3.12.6) lib/puma/server.rb:334:in `block in run'
+puma (3.12.6) lib/puma/thread_pool.rb:135:in `block in spawn_thread'
+Started GET "/calc/answer?first=43&op=%2B&second=44" for 127.0.0.1 at 2022-08-22 15:52:22 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"43", "op"=>"+", "second"=>"44"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 18ms (Views: 17.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/answer?first=43&op=div&second=44" for 127.0.0.1 at 2022-08-22 15:53:49 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"43", "op"=>"div", "second"=>"44"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 11ms (Views: 10.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/answer?first=43&op=*&second=44" for 127.0.0.1 at 2022-08-22 15:53:55 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"43", "op"=>"*", "second"=>"44"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 7ms (Views: 6.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/calc/answer?first=43&op=-&second=44" for 127.0.0.1 at 2022-08-22 15:54:01 +1000
+Processing by CalculatorController#calculon as HTML
+  Parameters: {"first"=>"43", "op"=>"-", "second"=>"44"}
+  Rendering calculator/calculon.html.erb within layouts/application
+  Rendered calculator/calculon.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 16ms (Views: 14.7ms | ActiveRecord: 0.0ms)
+
+

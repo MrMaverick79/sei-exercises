@@ -1,0 +1,21 @@
+
+<h3><%= @page_title %></h3>
+
+<p>What is the difference between a dog and a wolf?</p>
+
+<div class="dots">
+
+    <% 10.times do |i|  %>
+
+     .
+    
+    <% end %>
+
+    <img src="assets/poker.dog.jpg" width="200" alt="punch line">
+
+</div>
+
+
+<!--An easier way of linking images:-->
+
+<%= image_tag 'poker.dog.jpg', alt: "dogs playing poker", width: "200" %>
