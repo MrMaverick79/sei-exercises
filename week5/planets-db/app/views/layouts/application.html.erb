@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Planets Database</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+  
+
+  <body>
+  <header>
+    <h1>Tour of the Solar System</h1>
+    <nav>
+        <ul>
+          <a href="/"><li>Home</li></a>
+          <li><%= link_to 'Index', planets_path%></li>
+          <li><%= link_to 'Create', new_planet_path %></li>
+        </ul>
+    </nav>
+
+  </header>
+    <%= yield %>
+    <footer>&copy; Brendan Tuckerman 2022</footer>
+  </body>
+</html>

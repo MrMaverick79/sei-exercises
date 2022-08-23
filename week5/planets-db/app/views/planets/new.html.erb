@@ -1,0 +1,43 @@
+<div class="container">
+
+    <h2>Create new planet</h2>
+    <%= form_with model: @planet, local: true do |f| %>
+
+        <%= f.label :name %>
+        <%= f.text_field :name %>
+        <br>
+
+        <%= f.label :orbit %>
+        <%= f.text_field :orbit %>
+        <br>
+
+        <%= f.label :mass %>
+        <%= f.text_field :mass %>
+        <br>
+        
+        <%= f.label :moons %>
+        <%= f.text_field :moons %>
+        <br>
+
+        <%= f.label :image_url, 'Image URL' %>
+        <%= f.text_field :image_url %>
+        <br>
+
+        <%= f.submit %>
+
+    <% end  %>
+
+    <!-- This returns a security error
+    <form action="/planets" method="post">
+        <label>
+            Name:
+            <input type="text" name="name" id="name">
+        </label>
+    
+        <button>Create New Planet!</button>
+    </form> 
+    -->
+
+
+
+</div>

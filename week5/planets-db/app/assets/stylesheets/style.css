@@ -1,0 +1,60 @@
+html{
+    font-size: 18pt;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   color: aliceblue;
+
+}
+
+
+body{
+    background-image: url("stars.jpg");
+    background-size: cover;
+
+}
+
+a {
+    color: aliceblue;
+    font-size: 0.8rem;
+    
+}
+
+li {
+    list-style: none;
+    padding: 10px;
+   
+}
+
+a:hover{
+    color: red
+}
+
+.container {
+    width: 100%;
+    text-align: center;
+    
+}
+
+.container a {
+    font-size: 1.1rem;
+}
+
+footer {
+    font-size: 0.5rem;
+    position: absolute;
+    bottom: 0
+}
+
+/*HEADER */
+
+header {
+    display: flex;
+    border-bottom: 2px dotted whitesmoke;
+    align-items: center;
+    
+}
+
+header li {
+    display: inline-flex;
+
+    
+}

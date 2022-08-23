@@ -1,0 +1,25 @@
+
+<div class="container">
+<h3>
+    <%= @planet.name %>
+</h3>
+    <figure>
+        <%= image_tag @planet.image_url, alt: @planet.name, width: '500px' %>
+        <figcaption>The planet <%= @planet.name %></figcaption>
+    </figure>
+
+    <ul>
+        <li><strong>Orbit:</strong><%= @planet.orbit %> Earth orbits</li>
+
+        <li><strong>Moons:</strong><%= @planet.moons %></li>
+
+        <li><strong>Mass:</strong><%= @planet.moons %> Earths</li>
+    
+        
+    </ul>
+
+    <%= link_to 'Edit', edit_planet_path(@planet.id) %>
+
+    <%= link_to 'Delete', destroy_planet_path(@planet.id) %>
+
+</div>
