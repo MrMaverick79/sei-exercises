@@ -18,3 +18,14 @@ s4 = Song.create! title: "Identikit"
 
 
 puts "created #{ Song.count} songs"
+
+
+Artist.destroy_all
+art1= Artist.create! name: 'Billy Ray Curcus'
+
+art2 = Artist.create! name: "Metz"
+
+art3 = Artist.create! name: 'Radiohead'
+
+
+puts "Created #{Artist.count} artists"
