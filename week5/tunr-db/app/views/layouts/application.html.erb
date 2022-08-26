@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>TunrDb</title>
+    <title>Tunr Db</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
 
@@ -9,7 +9,30 @@
     <%= javascript_include_tag 'application' %>
   </head>
 
+
   <body>
+  <header>
+    <h1>TUNR</h1>
+       
+      <% if @current_user.present? %>
+        Welcome, <%= @current_user.name %> |
+         <%= link_to 'Logout', login_path, method: 'delete' %> 
+         |
+         <%= link_to 'Create Mixtape', new_mixtape_path %>
+
+      <% else %>
+        <%= link_to 'Login', login_path %>
+        |
+        <%= link_to 'Sign Up', new_user_path %>
+      <% end  %>
+      |
+      <%= link_to 'Mixtapes', mixtapes_path %>
+  
+  </header>
+
+  
     <%= yield %>
+
+    <footer>&copy; Muzic 2002</footer>
   </body>
 </html>

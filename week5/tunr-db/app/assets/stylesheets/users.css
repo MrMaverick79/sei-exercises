@@ -1,0 +1,8 @@
+.field_with_errors input{
+
+   border: 2px solid rgb(238, 86, 86);
+}
+
+.field_with_errors label {
+    color:rgb(238, 86, 86);
+}

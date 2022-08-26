@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2022_08_25_015713) do
+ActiveRecord::Schema.define(version: 2022_08_25_063926) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "albums", force: :cascade do |t|
+    t.text "title"
+    t.text "imnage"
+    t.string "year"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "artists", force: :cascade do |t|
     t.text "name"
@@ -21,10 +29,44 @@ ActiveRecord::Schema.define(version: 2022_08_25_015713) do
     t.datetime "updated_at", null: false
   end
 
+  create_table "genres", force: :cascade do |t|
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "genres_songs", force: :cascade do |t|
+    t.integer "song_id"
+    t.integer "genre_id"
+  end
+
+  create_table "mixtapes", force: :cascade do |t|
+    t.text "name"
+    t.text "image"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.integer "user_id"
+  end
+
+  create_table "mixtapes_songs", force: :cascade do |t|
+    t.integer "song_id"
+    t.integer "mixtape_id"
+  end
+
   create_table "songs", force: :cascade do |t|
     t.text "title"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "artist_id"
+    t.integer "album_id"
+  end
+
+  create_table "users", force: :cascade do |t|
+    t.string "email"
+    t.string "name"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.text "password_digest"
   end
 
 end
