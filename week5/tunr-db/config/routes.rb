@@ -8,7 +8,7 @@ Rails.application.routes.draw do
 
   get '/login' => 'session#new'  #show login form
   post '/login' =>  'session#create'  #form submit
-  delete '/login' => 'session#destroy' #
+  delete '/login' => 'session#destroy' #logout link goes here
 
 
   resources :mixtapes, :users

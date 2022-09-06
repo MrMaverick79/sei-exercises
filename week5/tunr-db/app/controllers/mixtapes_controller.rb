@@ -93,6 +93,9 @@ class MixtapesController < ApplicationController
   end #end update
 
   def destroy
+    
+    Link.destroy params[:id]
+    redirect_to links_path
   end
 
   private

@@ -4539,3 +4539,26 @@ Processing by PlanetsController#index as HTML
 Completed 200 OK in 9ms (Views: 8.5ms | ActiveRecord: 0.1ms)
 
 
+Started GET "/planets" for 127.0.0.1 at 2022-08-23 17:16:28 +1000
+Processing by PlanetsController#index as HTML
+  Rendering planets/index.html.erb within layouts/application
+  [1m[36mPlanet Load (0.2ms)[0m  [1m[34mSELECT "planets".* FROM "planets"[0m
+  ↳ app/views/planets/index.html.erb:7
+  Rendered planets/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 17ms (Views: 13.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/planets/new" for 127.0.0.1 at 2022-08-23 17:16:30 +1000
+Processing by PlanetsController#new as HTML
+  Rendering planets/new.html.erb within layouts/application
+  Rendered planets/new.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 11ms (Views: 9.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2022-08-23 17:16:32 +1000
+Processing by PlanetsController#home as HTML
+  Rendering planets/home.html.erb within layouts/application
+  Rendered planets/home.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 17ms (Views: 16.7ms | ActiveRecord: 0.0ms)
+
+

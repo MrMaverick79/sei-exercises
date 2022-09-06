@@ -3,6 +3,6 @@ class Fruit < ApplicationRecord
     # def squishy?
     #     false
     # end
-        
+    validates :name, presence: true
 
 end

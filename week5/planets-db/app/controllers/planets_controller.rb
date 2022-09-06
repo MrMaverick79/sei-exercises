@@ -4,7 +4,7 @@ class PlanetsController < ApplicationController
 
     end #end home
     
-    #Create
+    Mark#Create
     #1. blank form
     def new
         @planet = Planet.new

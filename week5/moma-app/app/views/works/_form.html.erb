@@ -1,0 +1,29 @@
+
+<%= form_with model: @work, local: true do |f| %>
+
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <br>
+    <%= f.label :year %>
+    <%= f.text_field :year %>
+    <br>
+
+    <%= f.label :style %>
+    <%= f.text_field :style %>
+    <br>
+
+     <%= f.label :medium %>
+    <%= f.text_field :medium %>
+    <br>
+  
+    <%= f.label :image, "Image URL"%>
+    <%= f.text_field :image %>
+    <br>
+
+    <%= f.label :artist_id, 'Artist' %>
+    <%= f.collection_select :artist_id, Artist.all, :id, :name, include_blank: true %>
+
+
+    <%= f.submit %>
+
+<% end  %>

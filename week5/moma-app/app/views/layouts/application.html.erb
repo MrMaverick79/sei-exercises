@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Museum of Modern Art</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag    'application', media: 'all' %>
+    <%= javascript_include_tag 'application' %>
+  </head>
+  <header>
+    <h1>MOMA</h1>
+    <nav>
+      <ul>
+        <li><%= link_to 'Home', root_path %> |</li>
+        
+        <li><%= link_to 'Artists', artists_path %> |</li>
+        
+        <li><%= link_to 'Add Artist', new_artist_path %> |</li>
+      </ul>
+
+      <ul>
+        <li><%= link_to 'All Works', works_path %> |</li>
+        
+        <li><%= link_to 'Add Work', new_work_path %> |</li>
+      
+      </ul>
+    
+    </nav>
+  
+  
+  </header>
+
+
+  <body>
+    <%= yield %>
+  </body>
+
+  <footer>
+    <ul>
+      <li>
+        &copy; Museum of Modern Art NY 2022 
+      </li>
+    </ul>
+  
+  </footer>
+
+</html>

@@ -1,0 +1,34 @@
+/* Stylesheet fo MOMA */
+
+/*Universals */
+
+body{
+
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    color: rgb(228, 228, 228);
+    background-color: rgb(65,65,65);
+}
+
+
+a {
+    color: rgb(215, 175, 96)
+}
+
+header{
+    border-bottom:2px solid  rgb(228, 228, 228);
+    display: flex;
+    justify-content: space-around;
+}
+
+header ul {
+    display: inline-flex;
+}
+
+header li {
+    padding: 15px;
+    list-style: none;
+}
+
+.artist_image {
+    max-height: 50vh;
+}
