@@ -18,12 +18,14 @@ const getApiData = async function(){
     //'Await' means await for the following promise to resolve!
     try {
         const res = await axios.get("http://www.numbersapi.com/42?json");
-        console.log('Response', res.data);
+        
+        return res.data
     } catch (err) {
         console.error('Something went wrong:', err);
     }
 }
-getApiData();
+
+
 
 
 //What is a promise?
