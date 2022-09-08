@@ -10959,3 +10959,341 @@ Processing by FruitsController#index as HTML
   Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1383)
 Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.2ms | Allocations: 1723)
   [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mActiveRecord::InternalMetadata Pluck (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "schema_sha1"], ["LIMIT", 1]]
+  [1m[36mActiveRecord::SchemaMigration Pluck (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.5ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test shelf"], ["created_at", "2022-09-07 01:38:20.681966"], ["updated_at", "2022-09-07 01:38:20.681966"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.4ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.690023"], ["updated_at", "2022-09-07 01:38:20.690023"], ["name", "Test Fruit 0"], ["price", nil], ["type", nil], ["shelf_id", 481]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.691415"], ["updated_at", "2022-09-07 01:38:20.691415"], ["name", "Test Fruit 1"], ["price", nil], ["type", nil], ["shelf_id", 481]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.692422"], ["updated_at", "2022-09-07 01:38:20.692422"], ["name", "Test Fruit 2"], ["price", nil], ["type", nil], ["shelf_id", 481]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by FruitsController#index as HTML
+  [1m[36mFruit Load (0.3ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering fruits/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered fruits/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 321)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered layout layouts/application.html.erb (Duration: 0.8ms | Allocations: 448)
+Completed 200 OK in 6ms (Views: 3.1ms | ActiveRecord: 0.3ms | Allocations: 3515)
+  [1m[36mTRANSACTION (0.2ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.3ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test shelf"], ["created_at", "2022-09-07 01:38:20.797580"], ["updated_at", "2022-09-07 01:38:20.797580"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.798848"], ["updated_at", "2022-09-07 01:38:20.798848"], ["name", "Test Fruit 0"], ["price", nil], ["type", nil], ["shelf_id", 482]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.799881"], ["updated_at", "2022-09-07 01:38:20.799881"], ["name", "Test Fruit 1"], ["price", nil], ["type", nil], ["shelf_id", 482]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.800883"], ["updated_at", "2022-09-07 01:38:20.800883"], ["name", "Test Fruit 2"], ["price", nil], ["type", nil], ["shelf_id", 482]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by FruitsController#index as HTML
+  [1m[36mFruit Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering fruits/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered fruits/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 85)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | Allocations: 211)
+Completed 200 OK in 2ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 594)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.2ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test shelf"], ["created_at", "2022-09-07 01:38:20.805298"], ["updated_at", "2022-09-07 01:38:20.805298"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.806415"], ["updated_at", "2022-09-07 01:38:20.806415"], ["name", "Test Fruit 0"], ["price", nil], ["type", nil], ["shelf_id", 483]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.807443"], ["updated_at", "2022-09-07 01:38:20.807443"], ["name", "Test Fruit 1"], ["price", nil], ["type", nil], ["shelf_id", 483]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.808426"], ["updated_at", "2022-09-07 01:38:20.808426"], ["name", "Test Fruit 2"], ["price", nil], ["type", nil], ["shelf_id", 483]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by FruitsController#index as HTML
+  [1m[36mFruit Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering fruits/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered fruits/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 85)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | Allocations: 211)
+Completed 200 OK in 1ms (Views: 0.7ms | ActiveRecord: 0.2ms | Allocations: 594)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.2ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test shelf"], ["created_at", "2022-09-07 01:38:20.812614"], ["updated_at", "2022-09-07 01:38:20.812614"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.813734"], ["updated_at", "2022-09-07 01:38:20.813734"], ["name", "Test Fruit 0"], ["price", nil], ["type", nil], ["shelf_id", 484]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.814754"], ["updated_at", "2022-09-07 01:38:20.814754"], ["name", "Test Fruit 1"], ["price", nil], ["type", nil], ["shelf_id", 484]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.815735"], ["updated_at", "2022-09-07 01:38:20.815735"], ["name", "Test Fruit 2"], ["price", nil], ["type", nil], ["shelf_id", 484]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by FruitsController#index as HTML
+  [1m[36mFruit Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering fruits/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered fruits/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 85)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | Allocations: 211)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 594)
+  [1m[36mFruit Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.2ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test shelf"], ["created_at", "2022-09-07 01:38:20.821233"], ["updated_at", "2022-09-07 01:38:20.821233"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.822369"], ["updated_at", "2022-09-07 01:38:20.822369"], ["name", "Test Fruit 0"], ["price", nil], ["type", nil], ["shelf_id", 485]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.823365"], ["updated_at", "2022-09-07 01:38:20.823365"], ["name", "Test Fruit 1"], ["price", nil], ["type", nil], ["shelf_id", 485]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.824356"], ["updated_at", "2022-09-07 01:38:20.824356"], ["name", "Test Fruit 2"], ["price", nil], ["type", nil], ["shelf_id", 485]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by FruitsController#index as HTML
+  [1m[36mFruit Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering fruits/index.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered fruits/index.html.erb within layouts/application (Duration: 0.2ms | Allocations: 85)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | Allocations: 211)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.2ms | Allocations: 594)
+  [1m[36mFruit Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits" ORDER BY "fruits"."id" DESC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mFruit Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits" ORDER BY "fruits"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.2ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2022-09-07 01:38:20.830460"], ["updated_at", "2022-09-07 01:38:20.830460"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by FruitsController#create as HTML
+  Parameters: {"fruit"=>{"name"=>"Strawberry", "shelf_id"=>"486"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.3ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.835370"], ["updated_at", "2022-09-07 01:38:20.835370"], ["name", "Strawberry"], ["price", nil], ["type", nil], ["shelf_id", 486]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/fruits/940
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms | Allocations: 649)
+  [1m[36mFruit Count (0.3ms)[0m  [1m[34mSELECT COUNT(*) FROM "fruits"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.2ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2022-09-07 01:38:20.838685"], ["updated_at", "2022-09-07 01:38:20.838685"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by FruitsController#create as HTML
+  Parameters: {"fruit"=>{"name"=>"Strawberry", "shelf_id"=>"487"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.840798"], ["updated_at", "2022-09-07 01:38:20.840798"], ["name", "Strawberry"], ["price", nil], ["type", nil], ["shelf_id", 487]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/fruits/941
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms | Allocations: 578)
+  [1m[36mFruit Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits" ORDER BY "fruits"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.2ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2022-09-07 01:38:20.843744"], ["updated_at", "2022-09-07 01:38:20.843744"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by FruitsController#create as HTML
+  Parameters: {"fruit"=>{"name"=>"Strawberry", "shelf_id"=>"488"}}
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.845778"], ["updated_at", "2022-09-07 01:38:20.845778"], ["name", "Strawberry"], ["price", nil], ["type", nil], ["shelf_id", 488]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Redirected to http://test.host/fruits/942
+Completed 302 Found in 2ms (ActiveRecord: 0.4ms | Allocations: 578)
+  [1m[36mFruit Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits" ORDER BY "fruits"."id" ASC LIMIT $1[0m  [["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.2ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2022-09-07 01:38:20.849560"], ["updated_at", "2022-09-07 01:38:20.849560"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by FruitsController#create as HTML
+  Parameters: {"fruit"=>{"name"=>"", "shelf_id"=>"489"}}
+  Rendering layout layouts/application.html.erb
+  Rendering fruits/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered fruits/new.html.erb within layouts/application (Duration: 0.3ms | Allocations: 77)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered layout layouts/application.html.erb (Duration: 0.5ms | Allocations: 203)
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.0ms | Allocations: 726)
+  [1m[36mFruit Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "fruits"[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.2ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test"], ["created_at", "2022-09-07 01:38:20.854567"], ["updated_at", "2022-09-07 01:38:20.854567"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Processing by FruitsController#create as HTML
+  Parameters: {"fruit"=>{"name"=>"", "shelf_id"=>"490"}}
+  Rendering layout layouts/application.html.erb
+  Rendering fruits/new.html.erb within layouts/application
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered fruits/new.html.erb within layouts/application (Duration: 0.2ms | Allocations: 78)
+  Template rendering was prevented by rspec-rails. Use `render_views` to verify rendered view contents if necessary.
+  Rendered layout layouts/application.html.erb (Duration: 0.4ms | Allocations: 204)
+Completed 200 OK in 1ms (Views: 0.8ms | ActiveRecord: 0.0ms | Allocations: 669)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.2ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test shel"], ["created_at", "2022-09-07 01:38:20.858884"], ["updated_at", "2022-09-07 01:38:20.858884"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.860009"], ["updated_at", "2022-09-07 01:38:20.860009"], ["name", "Fruit #0"], ["price", nil], ["type", nil], ["shelf_id", 491]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.861015"], ["updated_at", "2022-09-07 01:38:20.861015"], ["name", "Fruit #1"], ["price", nil], ["type", nil], ["shelf_id", 491]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.861992"], ["updated_at", "2022-09-07 01:38:20.861992"], ["name", "Fruit #2"], ["price", nil], ["type", nil], ["shelf_id", 491]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/fruits" for 127.0.0.1 at 2022-09-07 11:38:20 +1000
+Processing by FruitsController#index as HTML
+  [1m[36mFruit Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering fruits/index.html.erb within layouts/application
+  Rendered fruits/index.html.erb within layouts/application (Duration: 0.3ms | Allocations: 183)
+  Rendered layout layouts/application.html.erb (Duration: 49.4ms | Allocations: 27114)
+Completed 200 OK in 51ms (Views: 49.7ms | ActiveRecord: 0.2ms | Allocations: 27455)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.3ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test shel"], ["created_at", "2022-09-07 01:38:20.920413"], ["updated_at", "2022-09-07 01:38:20.920413"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.921621"], ["updated_at", "2022-09-07 01:38:20.921621"], ["name", "Fruit #0"], ["price", nil], ["type", nil], ["shelf_id", 492]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.922631"], ["updated_at", "2022-09-07 01:38:20.922631"], ["name", "Fruit #1"], ["price", nil], ["type", nil], ["shelf_id", 492]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.923631"], ["updated_at", "2022-09-07 01:38:20.923631"], ["name", "Fruit #2"], ["price", nil], ["type", nil], ["shelf_id", 492]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+Started GET "/fruits" for 127.0.0.1 at 2022-09-07 11:38:20 +1000
+Processing by FruitsController#index as HTML
+  [1m[36mFruit Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits"[0m
+  Rendering layout layouts/application.html.erb
+  Rendering fruits/index.html.erb within layouts/application
+  Rendered fruits/index.html.erb within layouts/application (Duration: 0.0ms | Allocations: 10)
+  Rendered layout layouts/application.html.erb (Duration: 1.0ms | Allocations: 1383)
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.2ms | Allocations: 1723)
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.2ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test shelf"], ["created_at", "2022-09-07 01:38:20.930904"], ["updated_at", "2022-09-07 01:38:20.930904"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPear Exists? (0.3ms)[0m  [1m[34mSELECT 1 AS one FROM "fruits" WHERE "fruits"."type" = $1 AND "fruits"."name" = $2 LIMIT $3[0m  [["type", "Pear"], ["name", "nashi"], ["LIMIT", 1]]
+  [1m[36mPear Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.935677"], ["updated_at", "2022-09-07 01:38:20.935677"], ["name", "nashi"], ["price", "2.0"], ["type", "Pear"], ["shelf_id", 493]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mPear Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits" WHERE "fruits"."type" = $1 ORDER BY "fruits"."id" ASC LIMIT $2[0m  [["type", "Pear"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.2ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test shelf"], ["created_at", "2022-09-07 01:38:20.938184"], ["updated_at", "2022-09-07 01:38:20.938184"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPear Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fruits" WHERE "fruits"."type" = $1 AND "fruits"."name" = $2 LIMIT $3[0m  [["type", "Pear"], ["name", "nashi"], ["LIMIT", 1]]
+  [1m[36mPear Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.939746"], ["updated_at", "2022-09-07 01:38:20.939746"], ["name", "nashi"], ["price", "2.0"], ["type", "Pear"], ["shelf_id", 494]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mPear Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits" WHERE "fruits"."type" = $1 ORDER BY "fruits"."id" ASC LIMIT $2[0m  [["type", "Pear"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.2ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test shelf"], ["created_at", "2022-09-07 01:38:20.941792"], ["updated_at", "2022-09-07 01:38:20.941792"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPear Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fruits" WHERE "fruits"."type" = $1 AND "fruits"."name" = $2 LIMIT $3[0m  [["type", "Pear"], ["name", "nashi"], ["LIMIT", 1]]
+  [1m[36mPear Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.943290"], ["updated_at", "2022-09-07 01:38:20.943290"], ["name", "nashi"], ["price", "2.0"], ["type", "Pear"], ["shelf_id", 495]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mPear Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits" WHERE "fruits"."type" = $1 ORDER BY "fruits"."id" ASC LIMIT $2[0m  [["type", "Pear"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.2ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test shelf"], ["created_at", "2022-09-07 01:38:20.945283"], ["updated_at", "2022-09-07 01:38:20.945283"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPear Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fruits" WHERE "fruits"."type" = $1 AND "fruits"."name" = $2 LIMIT $3[0m  [["type", "Pear"], ["name", "nashi"], ["LIMIT", 1]]
+  [1m[36mPear Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.946803"], ["updated_at", "2022-09-07 01:38:20.946803"], ["name", "nashi"], ["price", "2.0"], ["type", "Pear"], ["shelf_id", 496]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mPear Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits" WHERE "fruits"."type" = $1 ORDER BY "fruits"."id" ASC LIMIT $2[0m  [["type", "Pear"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.2ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test shelf"], ["created_at", "2022-09-07 01:38:20.948819"], ["updated_at", "2022-09-07 01:38:20.948819"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPear Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fruits" WHERE "fruits"."type" = $1 AND "fruits"."name" = $2 LIMIT $3[0m  [["type", "Pear"], ["name", "nashi"], ["LIMIT", 1]]
+  [1m[36mPear Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.950328"], ["updated_at", "2022-09-07 01:38:20.950328"], ["name", "nashi"], ["price", "2.0"], ["type", "Pear"], ["shelf_id", 497]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mPear Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits" WHERE "fruits"."type" = $1 ORDER BY "fruits"."id" ASC LIMIT $2[0m  [["type", "Pear"], ["LIMIT", 1]]
+  [1m[36mPear Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "fruits" WHERE "fruits"."type" = $1[0m  [["type", "Pear"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.952172"], ["updated_at", "2022-09-07 01:38:20.952172"], ["name", "basic fruit"], ["price", nil], ["type", nil], ["shelf_id", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mPear Count (0.2ms)[0m  [1m[34mSELECT COUNT(*) FROM "fruits" WHERE "fruits"."type" = $1[0m  [["type", "Pear"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.2ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test shelf"], ["created_at", "2022-09-07 01:38:20.954176"], ["updated_at", "2022-09-07 01:38:20.954176"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPear Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fruits" WHERE "fruits"."type" = $1 AND "fruits"."name" = $2 LIMIT $3[0m  [["type", "Pear"], ["name", "nashi"], ["LIMIT", 1]]
+  [1m[36mPear Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.955698"], ["updated_at", "2022-09-07 01:38:20.955698"], ["name", "nashi"], ["price", "2.0"], ["type", "Pear"], ["shelf_id", 498]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mPear Load (0.2ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits" WHERE "fruits"."type" = $1 ORDER BY "fruits"."id" ASC LIMIT $2[0m  [["type", "Pear"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.2ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test shelf"], ["created_at", "2022-09-07 01:38:20.957751"], ["updated_at", "2022-09-07 01:38:20.957751"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPear Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fruits" WHERE "fruits"."type" = $1 AND "fruits"."name" = $2 LIMIT $3[0m  [["type", "Pear"], ["name", "nashi"], ["LIMIT", 1]]
+  [1m[36mPear Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.959272"], ["updated_at", "2022-09-07 01:38:20.959272"], ["name", "nashi"], ["price", "2.0"], ["type", "Pear"], ["shelf_id", 499]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mPear Load (0.1ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits" WHERE "fruits"."type" = $1 ORDER BY "fruits"."id" ASC LIMIT $2[0m  [["type", "Pear"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mFruit Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.960601"], ["updated_at", "2022-09-07 01:38:20.960601"], ["name", "base fruit"], ["price", nil], ["type", nil], ["shelf_id", nil]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.2ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test shelf"], ["created_at", "2022-09-07 01:38:20.963441"], ["updated_at", "2022-09-07 01:38:20.963441"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPear Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fruits" WHERE "fruits"."type" = $1 AND "fruits"."name" = $2 LIMIT $3[0m  [["type", "Pear"], ["name", "nashi"], ["LIMIT", 1]]
+  [1m[36mPear Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.965062"], ["updated_at", "2022-09-07 01:38:20.965062"], ["name", "nashi"], ["price", "2.0"], ["type", "Pear"], ["shelf_id", 500]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mPear Load (0.1ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits" WHERE "fruits"."type" = $1 ORDER BY "fruits"."id" ASC LIMIT $2[0m  [["type", "Pear"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPear Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fruits" WHERE "fruits"."type" = $1 AND "fruits"."name" IS NULL LIMIT $2[0m  [["type", "Pear"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mPear Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fruits" WHERE "fruits"."type" = $1 AND "fruits"."name" IS NULL LIMIT $2[0m  [["type", "Pear"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mShelf Create (0.2ms)[0m  [1m[32mINSERT INTO "shelves" ("name", "created_at", "updated_at") VALUES ($1, $2, $3) RETURNING "id"[0m  [["name", "test shelf"], ["created_at", "2022-09-07 01:38:20.969377"], ["updated_at", "2022-09-07 01:38:20.969377"]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mTRANSACTION (0.0ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPear Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fruits" WHERE "fruits"."type" = $1 AND "fruits"."name" = $2 LIMIT $3[0m  [["type", "Pear"], ["name", "nashi"], ["LIMIT", 1]]
+  [1m[36mPear Create (0.2ms)[0m  [1m[32mINSERT INTO "fruits" ("created_at", "updated_at", "name", "price", "type", "shelf_id") VALUES ($1, $2, $3, $4, $5, $6) RETURNING "id"[0m  [["created_at", "2022-09-07 01:38:20.970929"], ["updated_at", "2022-09-07 01:38:20.970929"], ["name", "nashi"], ["price", "2.0"], ["type", "Pear"], ["shelf_id", 501]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mRELEASE SAVEPOINT active_record_1[0m
+  [1m[36mPear Load (0.1ms)[0m  [1m[34mSELECT "fruits".* FROM "fruits" WHERE "fruits"."type" = $1 ORDER BY "fruits"."id" ASC LIMIT $2[0m  [["type", "Pear"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[35mSAVEPOINT active_record_1[0m
+  [1m[36mPear Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fruits" WHERE "fruits"."type" = $1 AND "fruits"."name" = $2 LIMIT $3[0m  [["type", "Pear"], ["name", "nashi"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK TO SAVEPOINT active_record_1[0m
+  [1m[36mPear Exists? (0.2ms)[0m  [1m[34mSELECT 1 AS one FROM "fruits" WHERE "fruits"."type" = $1 AND "fruits"."name" = $2 LIMIT $3[0m  [["type", "Pear"], ["name", "nashi"], ["LIMIT", 1]]
+  [1m[36mTRANSACTION (0.1ms)[0m  [1m[31mROLLBACK[0m

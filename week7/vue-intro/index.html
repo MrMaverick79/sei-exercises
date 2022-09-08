@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vue Intro</title>
+    <script src="js/vue.js"></script>
+    <script src="js/main.js" defer></script>
+    <style>
+        .allGood{
+            color: green
+        }
+
+        .errors {
+            color: red;
+            border: 2px solid red;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>Vue Intro</h1>
+    
+
+    <div id="app">
+
+        <dog-info name="Minnie" roundness="5"></dog-info>
+        <h3>{{ message }}</h3>
+
+        <h4>{{ message }}</h4>
+
+        <p v-bind:title="hoverText">
+            Hover on this text to get a message
+        </p>
+
+        <input type="text" v-model="queryText"> 
+        <!-- The vmodelabove is a two way binding -->
+        <button v-on:click="changeMessage">Click Me!</button>
+
+        <h3>queryText: {{ queryText }} </h3>
+
+        <img v-bind:src="billUrl" v-on:mouseover=" hoverHandler ">
+
+        <div v-if="showMessage" v-bind:class="errorStatus">
+            These contents might disappear!
+        </div>
+
+        <ul>
+            <li v-for="item in todoList">{{ item.text }} </li>
+
+        </ul>
+
+
+
+    </div>  <!-- end of app -->
+    
+</body>
+</html>
