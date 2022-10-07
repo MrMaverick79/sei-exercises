@@ -37,7 +37,7 @@
         {
             row: Number,
             col: Number,
-            //user_id: Number, // placeholder
+            user_id: Number, // placeholder
             
             //TODO: make this work
             user: {

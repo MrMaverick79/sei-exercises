@@ -5,7 +5,7 @@ const mongoose = require('mongoose')
 //Load the Flight model
 //Accesses the module.exports as set the end of Flight.js
 const Flight = require('./Flight'); 
-
+const User = require('./User');
 // Use the mongoose style syntax for connecting to the DB
 // NB it uses a series of event handlers to avoid the big
 //mess of options and callback functions that we had to 
@@ -60,7 +60,7 @@ db.once('open', async() => {
             reservations: [
                { row: 1, col: 1, user_id: 10 },  // NOT real user_ids, just placeholders
                { row: 1, col: 3, user_id: 11 },
-               { row: 1, col: 3, user_id: 11 },
+               { row: 1, col: 4, user_id: 11 },
     
             ] // reservations[]
     
@@ -73,6 +73,60 @@ db.once('open', async() => {
     // const flights = await Flight.find()
     // console.log('flights', flights);
 
+    await User.deleteMany();
 
+    const createdUsers = await User.create([
+        {
+            name: 'Test User 1',
+            email: 'one@one.com',
+            reservations: [
+                {
+                    row:1,
+                    col:1,
+                    flight: createdFlights[0]
+
+                },
+                {
+                    row:2,
+                    col:3,
+                    flight: createdFlights[0]
+
+                },
+                {
+                    row:1,
+                    col:1,
+                    flight: createdFlights[1]
+
+                }
+            ]
+        },
+        {
+                    name: 'Test User 2',
+                    email: 'two@two.com',
+                    reservations: [
+                        {
+                            row:3,
+                            col:3,
+                            flight: createdFlights[0]
+        
+                        },
+                        {
+                            row:1,
+                            col:3,
+                            flight: createdFlights[1]
+        
+                        },
+                        {
+                            row:1,
+                            col:4,
+                            flight: createdFlights[1]
+        
+                        }
+                    ]
+                },
+    ])
+    console.log('Users', createdUsers)
+    console.log('User reservations:', createdUsers[0].reservations)
+    
     process.exit( 0 )
 }); //db.once
